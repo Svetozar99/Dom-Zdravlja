@@ -1,2 +1,2 @@
-Miso|Misovic|321548|NovisAD
-Sveto|Brboric|0644094513|NoviSad21
+001|Miso|Misovic|2201991153690|MUSKI|Puskinova 29|0644096874|miso991|lozinka123|LEKAR|40.0|SLUZBA_OPSTE_MEDICINE|specijalizacija...
+002|Marko|Markovic|1311968783654|MUSKI|Cankareva 18|0628524961|Markan77|lozinkaDr|LEKAR|50.0|ZDRAVSTVENA_ZASTITA_DJECE|specijalizacija neka

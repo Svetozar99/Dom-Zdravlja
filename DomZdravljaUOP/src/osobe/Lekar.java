@@ -12,9 +12,9 @@ public class Lekar extends Zaposleni {
 		this.specijalizacija = "";
 	}
 
-	public Lekar(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
+	public Lekar(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
 			String lozinka, Uloga uloga, double plata, Sluzba sluzba, String specijalizacija) {
-		super(ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba);
+		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba);
 		this.specijalizacija = specijalizacija;
 	}
 
@@ -28,7 +28,10 @@ public class Lekar extends Zaposleni {
 
 	@Override
 	public String toString() {
-		return "LEKAR \nIma specijalizaciju: " + specijalizacija + "Njegova uloga: " + getUloga();
+		return "LEKAR " +"\nId: " + getId() + "\nIme:" +  getIme() + "\nPrezime: " + getPrezime() + 
+				"\nJMBG: " + getJmbg() + "\nPol: " + getPol() + "\nAdresa: " + getAdresa() + "\nBroj telefona: " + getBrTel() +
+				"\nKorisnicko ime: " + getKorIme() + "\nLozinka: " + getLozinka() + "\nUloga: " + getUloga() + 
+				"\nPlata: " + getPlata() + "\nSluzba: " + getSluzba() + "\nSpecijalizacija: " + getSpecijalizacija();
 	}
 	
 }

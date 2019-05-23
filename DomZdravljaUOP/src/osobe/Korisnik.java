@@ -14,8 +14,8 @@ public abstract class Korisnik extends Osoba {
 		this.lozinka = "";
 		this.uloga = Uloga.PACIJENT;
 	}
-	public Korisnik(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,String korIme, String lozinka, Uloga uloga) {
-		super(ime, prezime, jmbg, pol, adresa, brTel);
+	public Korisnik(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,String korIme, String lozinka, Uloga uloga) {
+		super(id, ime, prezime, jmbg, pol, adresa, brTel);
 		this.korIme = korIme;
 		this.lozinka = lozinka;
 		this.uloga = uloga;
@@ -26,12 +26,7 @@ public abstract class Korisnik extends Osoba {
 		this.lozinka = original.lozinka;
 		this.uloga = original.uloga;
 	}
-	public Korisnik(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
-			String lozinka) {
-		super(ime, prezime, jmbg, pol, adresa, brTel);
-		this.korIme=korIme;
-		this.lozinka=lozinka;
-	}
+
 	public String getKorIme() {
 		return korIme;
 	}
@@ -52,6 +47,7 @@ public abstract class Korisnik extends Osoba {
 	}
 	@Override
 	public String toString() {
-		return "KORISNIK \nKorisnicno ime: " + korIme + "\nLozinka: " + lozinka + "\nUloga: " + uloga;
+		return "KORISNIK " + "\nId: " + getId() + "\nIme: " + getIme() + "\nPrezime: " + getPrezime() + "\nJMBG: "+ getJmbg() +
+				"\nPol: " + getPol() + "\nAdresa: " + getAdresa() + "\nBroj telefona: " + getBrTel() + "\nKorisnicno ime: " + korIme + "\nLozinka: " + lozinka + "\nUloga: " + uloga;
 	}
 }

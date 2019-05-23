@@ -1,38 +1,43 @@
 package osobe;
 
 import enumeracije.Pol;
+import enumeracije.Uloga;
+import pregled.Knjizica;
 
 public class Pacijent extends Korisnik {
 	private Lekar lekar;
-	private String zdrKnjizica;
+	private Knjizica zdrKnjizica;
 
 	public Pacijent() {
 		super();
 		this.lekar = new Lekar();
-		this.zdrKnjizica = "";
+		this.zdrKnjizica = null;
 	}
 
-	public Pacijent(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
-			String lozinka,Lekar lekar, String zdrKnjizica) {
-		super(ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka);
-		this.lekar=lekar;
-		this.zdrKnjizica=zdrKnjizica;
-	}
 	public Lekar getLekar() {
 		return lekar;
 	}
+	public Pacijent(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,
+			String korIme, String lozinka, Uloga uloga, Lekar lekar, Knjizica zdrKnjizica) {
+		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, uloga);
+		this.lekar = lekar;
+		this.zdrKnjizica = zdrKnjizica;
+	}
+
 	public void setLekar(Lekar lekar) {
 		this.lekar = lekar;
 	}
-	public String getZdrKnjizica() {
+	public Knjizica getZdrKnjizica() {
 		return zdrKnjizica;
 	}
-	public void setZdrKnjizica(String zdrKnjizica) {
+	public void setZdrKnjizica(Knjizica zdrKnjizica) {
 		this.zdrKnjizica = zdrKnjizica;
 	}
 	@Override
 	public String toString() {
-		return "PACIJENT " + getIme() + " " + getPrezime() + "\nNjegov lekar je: " + lekar.getIme() + " " + lekar.getPrezime() +
-				" a zdravstvena knjizica: " + zdrKnjizica;
+		return "PACIJENT " +"\nId: " + getId() + "\nIme:" +  getIme() + "\nPrezime: " + getPrezime() + 
+				"\nJMBG: " + getJmbg() + "\nPol: " + getPol() + "\nAdresa: " + getAdresa() + "\nBroj telefona: " + getBrTel() +
+				"\nKorisnicko ime: " + getKorIme() + "\nLozinka: " + getLozinka() + "\nUloga: " + getUloga() + 
+				"\nLekar: " + getLekar().getKorIme() + "\nZdravstvena knjizica: " + getZdrKnjizica().getId();// getZdrKnjizica().getId();
 	}
 }

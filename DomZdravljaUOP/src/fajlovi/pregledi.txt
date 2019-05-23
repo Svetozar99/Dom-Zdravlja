@@ -1,2 +1,2 @@
-Miso Misovic|Aco Acic|14
-Sveto Brboric|Mladen Cetkovic|4
+ljubo23|miso991|22.01.2021|18|opis neki|ZAKAZAN
+korImePacijenta|Markan77|terminPregleda|sobaPregleda|opisPregleda|OTKAZAN

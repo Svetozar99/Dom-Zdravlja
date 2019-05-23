@@ -1,54 +1,57 @@
 package pregled;
 
-import java.util.Date;
+import enumeracije.Kategorija;
 
 public class Knjizica {
-	protected String broj;
-	protected Date datumIsteka;
-	protected String kategorija;
+	protected String id; 
+	protected int broj;
+	protected String datumIsteka; //Date
+	protected Kategorija kategorija;
 	
 	public Knjizica(){
-		this.broj = "";
-		this.datumIsteka = new Date();
-		this.kategorija = "";
+		this.broj =0;
+		this.datumIsteka = "";//new Date();
+		this.kategorija = Kategorija.PRVA;
 	}
-	public Knjizica(String broj, Date datumIsteka, String kategorija) {
+	public Knjizica(String id, int broj, String datumIsteka, Kategorija kategorija) {
 		super();
+		this.id = id;
 		this.broj = broj;
 		this.datumIsteka = datumIsteka;
 		this.kategorija = kategorija;
 	}
-	public Knjizica(String broj, String kategorija) {
-		super();
-		this.broj = broj;
-		this.kategorija = kategorija;
+	public String getId() {
+		return id;
 	}
-	public String getBroj() {
+	public void setId(String id) {
+		this.id = id;
+	}
+	public int getBroj() {
 		return broj;
 	}
 
-	public void setBroj(String broj) {
+	public void setBroj(int broj) {
 		this.broj = broj;
 	}
 
-	public Date getDatumIsteka() {
+	public String getDatumIsteka() {
 		return datumIsteka;
 	}
 
-	public void setDatumIsteka(Date datumIsteka) {
+	public void setDatumIsteka(String datumIsteka) {
 		this.datumIsteka = datumIsteka;
 	}
 
-	public String getKategorija() {
+	public Kategorija getKategorija() {
 		return kategorija;
 	}
 
-	public void setKategorija(String kategorija) {
+	public void setKategorija(Kategorija kategorija) {
 		this.kategorija = kategorija;
 	}
 	@Override
 	public String toString() {
-		return "KNJIZICA \nBroj: " + broj + "\nDatum isteka: " + 
+		return "KNJIZICA \nId: " + id + "\nBroj: " + broj + "Datum isteka: " + 
 				datumIsteka + "\nKategorija: " + kategorija;
 	}
 }

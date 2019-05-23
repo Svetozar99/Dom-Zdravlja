@@ -3,6 +3,7 @@ package osobe;
 import enumeracije.Pol;
 
 public abstract class Osoba {
+	protected String id;
 	protected String ime;
 	protected String prezime;
 	protected String jmbg;
@@ -11,6 +12,7 @@ public abstract class Osoba {
 	protected String brTel;
 	
 	public Osoba() {
+		this.id = "";
 		this.ime = "";
 		this.prezime = "";
 		this.jmbg = "";
@@ -18,8 +20,9 @@ public abstract class Osoba {
 		this.adresa = "";
 		this.brTel = "";
 	}
-	public Osoba(String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel) {
+	public Osoba(String id, String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel) {
 		super();
+		this.id = id;
 		this.ime = ime;
 		this.prezime = prezime;
 		this.jmbg = jmbg;
@@ -28,12 +31,19 @@ public abstract class Osoba {
 		this.brTel = brTel;
 	}
 	public Osoba(Osoba original) {
+		this.id = original.id;
 		this.ime = original.ime;
 		this.prezime = original.prezime;
 		this.jmbg = original.jmbg;
 		this.pol = original.pol;
 		this.adresa = original.adresa;
 		this.brTel = original.brTel;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getIme() {
 		return ime;
@@ -73,7 +83,7 @@ public abstract class Osoba {
 	}
 	@Override
 	public String toString() {
-		return "OSOBA /nIme: " + ime + "\nPrezime: " + prezime + "\nJMBG: " + jmbg + 
+		return "OSOBA /nId:" + id + "Ime: " + ime + "\nPrezime: " + prezime + "\nJMBG: " + jmbg + 
 				"\nPol: " + pol + "\nAdresa: " + adresa + "\nBroj telefona: " + brTel;
 	}
 }

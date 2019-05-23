@@ -1,12 +1,5 @@
 package pregled;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-
 import enumeracije.Status;
 import osobe.Lekar;
 import osobe.Pacijent;
@@ -74,33 +67,8 @@ public class Pregled {
 	}
 	@Override
 	public String toString() {
-		return "PREGLED \nPacijent je: " + getPacijent() + ", lekar " + getLekar() + ", soba u kojoj se obavlja pregled " + getSoba();
+		return "PREGLED " + "\nPacijent je: " + getPacijent().getKorIme() + "\nLekar " + getLekar().getKorIme() + "\nSoba u kojoj se obavlja pregled " + getSoba()
+			 + "\nTermin: " + getTermin() + "\nOpis: " + getOpis() + "\nStatus: " + getStatus();
 	}
-	public void upisiUFajlPregled() {
-		try {
-			File file = new File("src/fajlovi/pregledi.txt");
-			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-			writer.write(getLekar().getKorIme() + "|" + getPacijent().getKorIme() + "|" + getSoba());
-			writer.close();
-		}catch (IOException e) {
-			System.out.println("Greska prilikom ocitavanja fajla");
-		}
-	}
-	public static void citanjeIzFajla() {
-		try {
-			File file = new File("src/fajlovi/pregledi.txt");
-			BufferedReader reader = new BufferedReader(new FileReader(file));
-			String line;
-			while((line = reader.readLine()) != null){
-				String[] dijelovi = line.split("\\|");
-				String lekarIme = dijelovi[0];
-				String pacijentIme = dijelovi[1];
-				String soba = dijelovi[2];
-				System.out.println("Lekar se zove: " + lekarIme + ", pacijent je " + pacijentIme + ", soba u kojoj ce biti pregled " + soba);
-			}
-			reader.close();
-		}catch (IOException e) {
-			System.out.println("Greska prilikom ucitavanja pregelda.");
-		}
-	}
+
 }

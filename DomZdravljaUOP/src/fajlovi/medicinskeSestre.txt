@@ -1,2 +1,2 @@
-Dijana|Cuk|357489|Kraljevo87
-Milena|Miskovic|654987|Sipovo14
+001|Slavica|Savic|3109978461783|ZENSKI|Jovana Ducica 14|0639751462|slava32|lozinka321|MEDICINSKA_SESTRA|40.0|SLUZBA_OPSTE_MEDICINE
+002|imeMedS|prezimeMedS|jmbgMedS|ZENSKI|adresaMedS|brTelMedS|korImeMedS|lozinkaMedS|MEDICINSKA_SESTRA|35.0|STOMATOLOSKA_SLUZBA

@@ -1,2 +1,2 @@
-Aco|Acic|Aco97
-Mladen|Cetkovic|Cetko87
+001|Ljubisa|Kovac|15111965456987|MUSKI|Svetosavska bb|0658269741|ljubo23|lozinkaaa|PACIJENT|miso991|001
+002|imePacijenta|prezimePacijenta|jmbgPacijenta|ZENSKI|adresaPacijenta|brTelPacijenta|korImePacijenta|lozinkaPacijenta|PACIJENT|Markan77|002
