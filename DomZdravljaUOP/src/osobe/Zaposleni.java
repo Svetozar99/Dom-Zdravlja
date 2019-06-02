@@ -14,8 +14,8 @@ public abstract class Zaposleni extends Korisnik {
 		this.sluzba = Sluzba.SLUZBA_OPSTE_MEDICINE;
 	}
 	public Zaposleni(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
-			String lozinka, Uloga uloga,double plata, Sluzba sluzba) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, uloga);
+			String lozinka, Uloga uloga,double plata, Sluzba sluzba, boolean active) {
+		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, uloga, active);
 		this.plata = plata;
 		this.sluzba = sluzba;
 	}
@@ -35,6 +35,12 @@ public abstract class Zaposleni extends Korisnik {
 	}
 	public void setSluzba(Sluzba sluzba) {
 		this.sluzba = sluzba;
+	}
+	public boolean getActive() {
+		return active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 	@Override
 	public String toString() {

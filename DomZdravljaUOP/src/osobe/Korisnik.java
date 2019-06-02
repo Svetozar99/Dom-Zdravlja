@@ -14,8 +14,8 @@ public abstract class Korisnik extends Osoba {
 		this.lozinka = "";
 		this.uloga = Uloga.PACIJENT;
 	}
-	public Korisnik(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,String korIme, String lozinka, Uloga uloga) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel);
+	public Korisnik(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme, String lozinka, Uloga uloga, boolean active) {
+		super(id, ime, prezime, jmbg, pol, adresa, brTel, active);
 		this.korIme = korIme;
 		this.lozinka = lozinka;
 		this.uloga = uloga;

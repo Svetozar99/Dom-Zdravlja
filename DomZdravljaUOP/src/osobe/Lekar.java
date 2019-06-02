@@ -5,16 +5,16 @@ import enumeracije.Sluzba;
 import enumeracije.Uloga;
 
 public class Lekar extends Zaposleni {
-	protected String specijalizacija;
 	
+	protected String specijalizacija;
 	public Lekar() {
 		super();
 		this.specijalizacija = "";
 	}
 
 	public Lekar(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
-			String lozinka, Uloga uloga, double plata, Sluzba sluzba, String specijalizacija) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba);
+			String lozinka, Uloga uloga, double plata, Sluzba sluzba, String specijalizacija,boolean active) {
+		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba,active);
 		this.specijalizacija = specijalizacija;
 	}
 
@@ -24,6 +24,12 @@ public class Lekar extends Zaposleni {
 
 	public void setSpecijalizacija(String specijalizacija) {
 		this.specijalizacija = specijalizacija;
+	}
+	public boolean getActive() {
+		return this.active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 	@Override

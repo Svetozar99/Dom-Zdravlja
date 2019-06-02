@@ -10,6 +10,7 @@ public abstract class Osoba {
 	protected Pol pol;
 	protected String adresa;
 	protected String brTel;
+	protected boolean active;
 	
 	public Osoba() {
 		this.id = "";
@@ -19,8 +20,9 @@ public abstract class Osoba {
 		this.pol = Pol.ZENSKI;
 		this.adresa = "";
 		this.brTel = "";
+		this.active = false;
 	}
-	public Osoba(String id, String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel) {
+	public Osoba(String id, String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel, boolean active) {
 		super();
 		this.id = id;
 		this.ime = ime;
@@ -29,6 +31,7 @@ public abstract class Osoba {
 		this.pol = pol;
 		this.adresa = adresa;
 		this.brTel = brTel;
+		this.active = active;
 	}
 	public Osoba(Osoba original) {
 		this.id = original.id;
@@ -38,6 +41,7 @@ public abstract class Osoba {
 		this.pol = original.pol;
 		this.adresa = original.adresa;
 		this.brTel = original.brTel;
+		this.active = original.active;
 	}
 	public String getId() {
 		return id;
@@ -81,9 +85,15 @@ public abstract class Osoba {
 	public void setBrTel(String brTel) {
 		this.brTel = brTel;
 	}
+	public boolean getActive() {
+		return active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
+	}
 	@Override
 	public String toString() {
-		return "OSOBA /nId:" + id + "Ime: " + ime + "\nPrezime: " + prezime + "\nJMBG: " + jmbg + 
-				"\nPol: " + pol + "\nAdresa: " + adresa + "\nBroj telefona: " + brTel;
+		return "OSOBA /nId:" + getId() + "Ime: " + getIme() + "\nPrezime: " + getPrezime() + "\nJMBG: " + getJmbg() + 
+				"\nPol: " + getPol() + "\nAdresa: " + getAdresa() + "\nBroj telefona: " + getBrTel();
 	}
 }

@@ -1,2 +1,3 @@
-001|Ljubisa|Kovac|15111965456987|MUSKI|Svetosavska bb|0658269741|ljubo23|lozinkaaa|PACIJENT|miso991|001
-002|imePacijenta|prezimePacijenta|jmbgPacijenta|ZENSKI|adresaPacijenta|brTelPacijenta|korImePacijenta|lozinkaPacijenta|PACIJENT|Markan77|002
+PA524|novoime|prezimee|jmbg|MUSKI|novaadresa|brtel|korime|novalozinka|PACIJENT|korime|null|false
+PA758|ime1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korime1|lozinka1|PACIJENT|korime|null|false
+PA883|ime2|prezime2|jmbg2|MUSKI|adresa2|brtel2|korime2|lozinka2|PACIJENT|korime2|null|true

@@ -1,2 +1,3 @@
-ljubo23|miso991|22.01.2021|18|opis neki|ZAKAZAN
-korImePacijenta|Markan77|terminPregleda|sobaPregleda|opisPregleda|OTKAZAN
+PR26|korime1|korime1|24.09.2019|8|neki opis|ZATRAZEN|false
+PR510|korime1|korime1|22.01.2020|7|neki opis|ZAKAZAN|false
+PR515|korime2|korime2|24.02.2020|6|neki opis|OTKAZAN|true
