@@ -12,9 +12,9 @@ public class Lekar extends Zaposleni {
 		this.specijalizacija = "";
 	}
 
-	public Lekar(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
-			String lozinka, Uloga uloga, double plata, Sluzba sluzba, String specijalizacija,boolean active) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba,active);
+	public Lekar(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme,
+			String lozinka, Uloga uloga, double plata, Sluzba sluzba, String specijalizacija) {
+		super(ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.LEKAR, plata, sluzba);
 		this.specijalizacija = specijalizacija;
 	}
 

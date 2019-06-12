@@ -1,30 +1,30 @@
 package pregled;
 
+import java.util.Date;
+
 import enumeracije.Status;
 import osobe.Lekar;
 import osobe.Pacijent;
 
 public class Pregled {
-	protected String id;
-	protected Pacijent pacijent;
-	protected Lekar lekar;
-	protected String termin;
-	protected String soba;
-	protected String opis;
-	protected Status status;
-	protected boolean active;
+	public String id;
+	public Pacijent pacijent;
+	public Lekar lekar;
+	public Date termin;
+	public String soba;
+	public String opis;
+	public Status status;
 	
 	public Pregled() {
 		this.id = "";
 		this.pacijent = new Pacijent();
 		this.lekar = new Lekar();
-		this.termin = "";
+		this.termin = new Date();
 		this.soba = "";
 		this.opis = "";
 		this.status = Status.ZATRAZEN;
-		this.active = false;
 	}
-	public Pregled(String id,Pacijent pacijent, Lekar lekar, String termin, String soba, String opis, Status status,boolean active) {
+	public Pregled(String id,Pacijent pacijent, Lekar lekar, Date termin, String soba, String opis, Status status) {
 		super();
 		this.id = id;
 		this.pacijent = pacijent;
@@ -33,7 +33,6 @@ public class Pregled {
 		this.soba = soba;
 		this.opis = opis;
 		this.status = status;
-		this.active = active;
 	}
 	public String getId() {
 		return id;
@@ -53,10 +52,10 @@ public class Pregled {
 	public void setLekar(Lekar lekar) {
 		this.lekar = lekar;
 	}
-	public String getTermin() {
+	public Date getTermin() {
 		return termin;
 	}
-	public void setTermin(String termin) {
+	public void setTermin(Date termin) {
 		this.termin = termin;
 	}
 	public String getSoba() {
@@ -77,12 +76,7 @@ public class Pregled {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
-	public boolean getActive() {
-		return active;
-	}
-	public void setActive(boolean active) {
-		this.active = active;
-	}
+
 	@Override
 	public String toString() {
 		return "PREGLED " + "\nId:" + getId() + "\nPacijent je: " + getPacijent().getId() + "\nLekar " + getLekar().getKorIme() + "\nSoba u kojoj se obavlja pregled " + getSoba()

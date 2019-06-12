@@ -22,7 +22,7 @@ public abstract class Osoba {
 		this.brTel = "";
 		this.active = false;
 	}
-	public Osoba(String id, String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel, boolean active) {
+	public Osoba(String ime, String prezime, String jmbg,Pol pol, String adresa, String brTel) {
 		super();
 		this.id = id;
 		this.ime = ime;

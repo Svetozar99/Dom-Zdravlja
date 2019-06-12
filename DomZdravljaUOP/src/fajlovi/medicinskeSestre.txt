@@ -1,3 +1,3 @@
-MS477|imee|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korime|lozikna1|MEDICINSKA_SESTRA|900.0|ZDRAVSTVENA_ZASTITA_DJECE|true
-MS562|ime|prezime|jmbg|MUSKI|adresa|brtel|korimee1|lozinka|MEDICINSKA_SESTRA|900.0|SLUZBA_ZA_TEHNICKE_POSLOVE|true
-MS70|ime2|prezime2|jmbg2|ZENSKI|adresa2|brtel2|korime2|loznka2|MEDICINSKA_SESTRA|800.0|SLUZBA_ZA_PRAVNE_I_EKONOMSKE_POSLOVE|true
+ime1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korimem|lozinkam|MEDICINSKA_SESTRA|900.0|ZDRAVSTVENA_ZASTITA_DJECE
+ime|prezime|jmbg|MUSKI|adresa|brtel|korimem1|lozinkam1|MEDICINSKA_SESTRA|900.0|SLUZBA_ZA_TEHNICKE_POSLOVE
+ime2|prezime2|jmbg2|ZENSKI|adresa2|brtel2|korimem2|lozinkam2|MEDICINSKA_SESTRA|800.0|SLUZBA_ZA_PRAVNE_I_EKONOMSKE_POSLOVE

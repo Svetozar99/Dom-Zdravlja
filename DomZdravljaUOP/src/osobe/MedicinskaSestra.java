@@ -10,9 +10,9 @@ public class MedicinskaSestra extends Zaposleni {
 		super();
 	}
 
-	public MedicinskaSestra(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,
-			String korIme, String lozinka, Uloga uloga, double plata, Sluzba sluzba,boolean active) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.MEDICINSKA_SESTRA, plata, sluzba,active);
+	public MedicinskaSestra(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel,
+			String korIme, String lozinka, Uloga uloga, double plata, Sluzba sluzba) {
+		super(ime, prezime, jmbg, pol, adresa, brTel, korIme, lozinka, Uloga.MEDICINSKA_SESTRA, plata, sluzba);
 	}
 
 	public MedicinskaSestra(Zaposleni original) {

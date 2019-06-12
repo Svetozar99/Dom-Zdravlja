@@ -1,3 +1,4 @@
-PR26|korime1|korime1|24.09.2019|8|neki opis|ZATRAZEN|false
-PR510|korime1|korime1|22.01.2020|7|neki opis|ZAKAZAN|false
-PR515|korime2|korime2|24.02.2020|6|neki opis|OTKAZAN|true
+PR114|korimep1|korimel2|22.01.2020 15.15|7|opiss|ZATRAZEN
+PR657|korimep1|korimel2|18.05.2019 14.14|6|opisneki|OTKAZAN
+PR522|korimel|korime3|18.10.2019 04.06|4|opisneki|ZAKAZAN
+PR543|korimel|korimel1|04.06.2019 22.17|5|opissss|ZAKAZAN

@@ -1,3 +1,3 @@
-L898|ime|prezime|jmbgg|MUSKI|adresa|brtel|korime|lozinka|LEKAR|1000.0|SLUZBA_OPSTE_MEDICINE|specijalizacija|true
-L582|ime1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korime1|lozinka1|LEKAR|2000.0|STOMATOLOSKA_SLUZBA|specijalzacija1|false
-L719|ime2|prezime2|jmbg2|MUSKI|adresa32|brtel2|korime2|loznika2|LEKAR|1500.0|SLUZBA_ZA_PRAVNE_I_EKONOMSKE_POSLOVE|specijalzacija2|true
+ime|prezime|jmbg|MUSKI|adresa|brtel|korimel2|lozinkal|LEKAR|1000.0|SLUZBA_OPSTE_MEDICINE|specijalizacija
+imee1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korimel1|lozinkal1|LEKAR|2000.0|STOMATOLOSKA_SLUZBA|specijalzacija1
+ime3|prezime3|jmbg3|MUSKI|adresa3|brtel3|korime3|lozinka3|LEKAR|1500.0|SLUZBA_OPSTE_MEDICINE|specijalizacija3

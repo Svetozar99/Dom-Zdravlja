@@ -1,2 +1,0 @@
-L200|ime|prezime|jmbg|MUSKI|adresa|brtel|korime|lozi|LEKAR|777.0|SLUZBA_ZA_PRAVNE_I_EKONOMSKE_POSLOVE|speci|true
-L311|ime1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korime1|lozi1|LEKAR|999.0|SLUZBA_OPSTE_MEDICINE|speci1|true

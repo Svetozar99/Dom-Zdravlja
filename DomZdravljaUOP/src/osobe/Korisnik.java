@@ -4,9 +4,9 @@ import enumeracije.Pol;
 import enumeracije.Uloga;
 
 public abstract class Korisnik extends Osoba {
-	protected String korIme;
-	protected String lozinka;
-	protected Uloga uloga;
+	public String korIme;
+	public String lozinka;
+	public Uloga uloga;
 	
 	public Korisnik() {
 		super();
@@ -14,8 +14,8 @@ public abstract class Korisnik extends Osoba {
 		this.lozinka = "";
 		this.uloga = Uloga.PACIJENT;
 	}
-	public Korisnik(String id, String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme, String lozinka, Uloga uloga, boolean active) {
-		super(id, ime, prezime, jmbg, pol, adresa, brTel, active);
+	public Korisnik(String ime, String prezime, String jmbg, Pol pol, String adresa, String brTel, String korIme, String lozinka, Uloga uloga) {
+		super(ime, prezime, jmbg, pol, adresa, brTel);
 		this.korIme = korIme;
 		this.lozinka = lozinka;
 		this.uloga = uloga;

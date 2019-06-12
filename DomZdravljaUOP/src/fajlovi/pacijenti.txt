@@ -1,3 +1,2 @@
-PA524|novoime|prezimee|jmbg|MUSKI|novaadresa|brtel|korime|novalozinka|PACIJENT|korime|null|false
-PA758|ime1|prezime1|jmbg1|ZENSKI|adresa1|brtel1|korime1|lozinka1|PACIJENT|korime|null|false
-PA883|ime2|prezime2|jmbg2|MUSKI|adresa2|brtel2|korime2|lozinka2|PACIJENT|korime2|null|true
+ime1|prezime1|jmbgp1|MUSKI|adresap1|brtelp1|korimep1|lozp1|PACIJENT|korimel2|KN117
+ime|prezime|jmbg|ZENSKI|adresa|brtel|korimel|lozinka|PACIJENT|korimel2|KN115

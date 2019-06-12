@@ -1,28 +1,27 @@
-package pregled;
+package pregled; 
+
+import java.util.Date;
 
 import enumeracije.Kategorija;
 
 public class Knjizica {
-	protected String id; 
-	protected int broj;
-	protected String datumIsteka; //Date
-	protected Kategorija kategorija;
-	protected boolean active;
+	public String id; 
+	public int broj;
+	public Date datumIsteka; //Date
+	public Kategorija kategorija;
 	
 	public Knjizica(){
 		this.id = "";
 		this.broj =0;
-		this.datumIsteka = "";//new Date();
+		this.datumIsteka = new Date();
 		this.kategorija = Kategorija.PRVA;
-		this.active = false;
 	}
-	public Knjizica(String id, int broj, String datumIsteka, Kategorija kategorija, boolean active) {
+	public Knjizica(String id, int broj, Date datumIsteka, Kategorija kategorija) {
 		super();
 		this.id = id;
 		this.broj = broj;
 		this.datumIsteka = datumIsteka;
 		this.kategorija = kategorija;
-		this.active = active;
 	}
 	public String getId() {
 		return id;
@@ -38,11 +37,11 @@ public class Knjizica {
 		this.broj = broj;
 	}
 
-	public String getDatumIsteka() {
+	public Date getDatumIsteka() {
 		return datumIsteka;
 	}
 
-	public void setDatumIsteka(String datumIsteka) {
+	public void setDatumIsteka(Date datumIsteka) {
 		this.datumIsteka = datumIsteka;
 	}
 
@@ -54,13 +53,6 @@ public class Knjizica {
 		this.kategorija = kategorija;
 	}
 	
-	public boolean getActive() {
-		return active;
-	}
-	
-	public void setActive(boolean active) {
-		this.active = active;
-	}
 	@Override
 	public String toString() {
 		return "KNJIZICA \nId: " + getId() + "\nBroj: " + getBroj() + "\nDatum isteka: " + 
